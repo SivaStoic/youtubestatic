@@ -1,0 +1,135 @@
+.header{
+    
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    
+    border-bottom: 1px solid rgb(250, 247, 247);
+}
+
+.left-side-header{
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+
+}
+.hamburger-logo{
+    width: 24px;
+    margin-left: 25px;
+    margin-right: 18px;
+    
+}
+.youtube-logo{
+    width: 92px;
+    
+}
+.middle-side-header{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 35px;
+    flex: 1;
+    max-width: 500px;
+    align-items: center;
+}
+.search-bar{
+    width: 0;
+    height: 39px;
+    border:1px solid rgba(164, 160, 160, 0.81);
+    flex: 1;
+    padding-left: 10px;font-size: 17px;
+    border-radius: 2px;
+    
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    
+}
+
+.search-btn{
+    width: 65px;
+    height: 43px;
+    background-color: rgba(244, 242, 242, 0.995);
+    border:1px solid rgba(164, 160, 160, 0.81);
+    margin-left: -2px;
+   position: relative;
+}
+.search-btn .tooltip,.voice-search-btn .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    bottom: -28px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-btn:hover .tooltip,.voice-search-btn:hover .tooltip{
+    opacity: 1;
+}
+
+
+
+
+.search-img{
+    height: 24px;
+}
+.voice-search-btn{
+    width: 43px;
+    height: 43px;
+    background-color: rgb(244, 242, 242);
+   border: none;
+    position: relative;
+    border-radius: 22px;
+    margin-left:10px ;
+}
+.voice-search-img{
+    height: 26px;
+}
+
+.right-side-header{
+    display: flex;
+    align-items: center;
+
+    
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.upload-img,.youtube-apps-img,.notification-img{
+    height: 26px;
+}
+.upload-img{
+    
+    margin-right: 30px;
+}
+
+.notification-img{
+    margin-right: 100px;
+}
+.youtube-apps-img{
+    margin-right: 30px;
+}
+
+
+   
+  
+@media screen and (max-width: 768px) {
+    .search-bar {
+      width: 100%; /* Make the search bar full-width on mobile */
+    }
+  }
+  
+
+  
